@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  list-style-position:inside;
+}
+
+a {
+  text-decoration: none;
+  color: #2a5e92;
+}
+
+body {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+.navbar-container {
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh;
+  min-width: 20%;
+  z-index: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+.navbar-options--list {
+  font-size: 1.25rem;
+  padding: 20px;
+  list-style: none;
+}
+
+.navbar-options--item {
+  padding: 15px;
+  margin-bottom: 5px;
+  background: linear-gradient(to left, black 50%,  #2b2b2b 50%) right;
+  background-size: 201%;
+  transition: 0.5s ease-out;
+}
+
+.navbar-options--item:hover {
+  background-position: left;
+  cursor: pointer;
+}
+
+.navbar-options--item:hover .navbar-suboptions--list {
+  display: block;
+}
+
+.navbar-options--item-s {
+  padding: 15px;
+  margin-bottom: 5px;
+  background: #3a3a3b;
+}
+
+.navbar-options--link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-suboptions--list {
+  margin: 20px;
+  font-size: 1.15rem;
+  list-style: none;
+  display: none;
+}
+
+.navbar-suboptions--item {
+  padding: 5px;
+  margin-bottom: 5px;
+  background: linear-gradient(to left, #2b2b2b00 50%,  #565656 50%) right;
+  background-size: 201%;
+  transition: 0.5s ease-out;
+}
+
+.navbar-suboptions--item:hover {
+  background-position: left;
+  cursor: pointer;
+}
+
+.navbar-options--item-s .navbar-suboptions--list {
+  display: block;
+}
+
+.navbar-suboptions--item-s {
+  padding: 5px;
+  margin-bottom: 5px;
+  background: #858585;
+}
+
+.navbar-suboptions--link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header-image {
+  height: 400px;
+  width: 100vw;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.header-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+.box-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.feed-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-container {
+  margin: 20px;
+  background-color: #c4c4c4;
+  padding: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+}
+
+table, tr, td {
+  vertical-align: top;
+  border-collapse: collapse;
+  border: solid 5px #949494;
+  list-style-position:inside;
+  padding: 25px;
+}
+
+.list-image {
+  max-width: 250px;
+  margin: 5px;
+}
+
+.list-image:hover {
+  cursor: pointer;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.gallery-column {
+  max-width: 25%;
+}
+
+.gallery-column img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallery-item {
+  padding: 4px;
+}
+
+.display-container {
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Portfolio | Gallery Art</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/icon_logo.png" rel="icon" />
+
+</head>
+
+<body>
+  <div class="navbar-container">
+    <h1 class="navbar-title">Portfolio</h1>
+    <div class="navbar-options">
+      <ul class="navbar-options--list">
+        <li class="navbar-options--item">
+          <a class="navbar-options--link" href="../index.html">Home</a>
+        </li>
+        <li class="navbar-options--item">
+          <div class="navbar-options--item-name">About</div>
+          <ul class="navbar-suboptions--list">
+            <li class="navbar-suboptions--item">
+              <a class="navbar-suboptions--link" href="../about/information.html">Information</a>
+            </li>
+            <li class="navbar-suboptions--item">
+              <a class="navbar-suboptions--link" href="../about/contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar-options--item-s">
+          <div class="navbar-options--item-name">Gallery</div>
+          <ul class="navbar-suboptions--list">
+            <li class="navbar-suboptions--item">
+              <a class="navbar-suboptions--link" href="./skateboarding.html">Skateboarding</a>
+            </li>
+            <li class="navbar-suboptions--item-s">Art</li>
+            <li class="navbar-suboptions--item">
+              <a class="navbar-suboptions--link" href="./music.html">Music</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="body-container">
+    <img class="header-image" alt=""
+      src="https://rare-gallery.com/uploads/posts/899444-digital-art-landscape-sky-clouds-forest-Fangpeii.jpg" />
+    <div class="header-title">
+      <div class="typewriter">
+        <h1>Art Gallery</h1>
+      </div>
+    </div>
+    <div class="feed-container" style="display: flex; justify-content: center; width: 100%;">
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="./art/art1.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art5.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art9.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art13.jpg" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="./art/art2.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art6.jpg" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art10.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art14.jpg" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="./art/art3.jpg" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art7.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art11.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+        </div>
+        <div class="gallery-column">
+          <div class="gallery-item">
+            <img src="./art/art4.jpg" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art8.jpg" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="./art/art12.png" style="width: 100%" onclick="img_enlarge(this)" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="display-container" id="display-container">
+    <div class="box-container" id="img-container">
+
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
